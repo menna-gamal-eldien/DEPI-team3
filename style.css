@@ -1156,15 +1156,11 @@ main.alter {
 }
 
 .brand_items *.active {
-    scale: 4;
+    scale: 2.5;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-.brand_items.alter *.active {
-    scale: 2.5;
 }
 
 .viewmore {
