@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>9 Coffee — Workspace</title>
+    <!-- <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400&family=Inter:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap"
+        rel="stylesheet"> -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- NAV -->
+    <nav id="top-nav">
+        <span class="nav-logo">
+            <img src="./asset/Coffe9-logo.webp" alt="9 Coffee"
+                style="height:30px;aspect-ratio:1/1;vertical-align:middle;border-radius:50%;margin-left:10px;">
+            <span>9 Coffee</span>
+        </span>
+    </nav>
+
+    <main class="alter">
+        <!-- ═══════════════ IDENTITY ═══════════════ -->
+        <section class="section" id="identity">
+            <h2 class="section-title">Visual <em>Identity</em></h2>
+
+            <p class="section-sub">النظام البصري الحالي لـ 9 Coffee — اللوجو، لوحة الألوان، والمنتج الفعلي على الأرض.
+            </p>
+
+            <div class="brand_items alter">
+                <img src="./asset/Coffe9-10.webp" alt="Coffee9 assest">
+                <video controls src="./asset/Coffe9-20.mp4" alt="Coffee9 assest"></video>
+                <video controls src="./asset/Coffe9-21.mp4" alt="Coffee9 assest"></video>
+                <img src="./asset/Coffe9-22.png" alt="Coffee9 assest">
+                <img src="./asset/Coffe9-23.png" alt="Coffee9 assest">
+                <img src="./asset/Coffe9-24.png" alt="Coffee9 assest">
+                <img src="./asset/Coffe9-25.png" alt="Coffee9 assest">
+                <video controls src="./asset/Coffe9-26.mp4" alt="Coffee9 assest"></video>
+                <img src="./asset/Coffe9-28.png" alt="Coffee9 assest">
+                <video controls src="./asset/Coffe9-29.mp4" alt="Coffee9 assest"></video>
+                <img src="./asset/Coffe9-30.png" alt="Coffee9 assest">
+                <img src="./asset/Coffe9-31.png" alt="Coffee9 assest">
+                <img src="./asset/Coffe9-32.png" alt="Coffee9 assest">
+                <img src="./asset/Coffe9-33.png" alt="Coffee9 assest">
+                <img src="./asset/Coffe9-34.png" alt="Coffee9 assest">
+                <img src="./asset/Coffe9-35.png" alt="Coffee9 assest">
+                <img src="./asset/Coffe9-36.png" alt="Coffee9 assest">
+                <img src="./asset/Coffe9-37.png" alt="Coffee9 assest">
+                <img src="./asset/Coffe9-38.png" alt="Coffee9 assest">
+                <img src="./asset/Coffe9-39.png" alt="Coffee9 assest">
+                <img src="./asset/Coffe9-40.png" alt="Coffee9 assest">
+                <img src="./asset/Coffe9-41.png" alt="Coffee9 assest">
+                <img src="./asset/Coffe9-42.png" alt="Coffee9 assest">
+                <img src="./asset/Coffe9-43.png" alt="Coffee9 assest">
+                <img src="./asset/Coffe9-44.png" alt="Coffee9 assest">
+                <img src="./asset/Coffe9-45.png" alt="Coffee9 assest">
+                <img src="./asset/Coffe9-46.png" alt="Coffee9 assest">
+                <img src="./asset/Coffe9-47.png" alt="Coffee9 assest">
+                <img src="./asset/Coffe9-48.png" alt="Coffee9 assest">
+                <img src="./asset/Coffe9-49.png" alt="Coffee9 assest">
+                <img src="./asset/Coffe9-50.png" alt="Coffee9 assest">
+                <img src="./asset/Coffe9-51.png" alt="Coffee9 assest">
+                <img src="./asset/Coffe9-52.png" alt="Coffee9 assest">
+                <img src="./asset/Coffe9-53.png" alt="Coffee9 assest">
+                <img src="./asset/Coffe9-54.png" alt="Coffee9 assest">
+                <img src="./asset/Coffe9-55.png" alt="Coffee9 assest">
+                <img src="./asset/Coffe9-56.png" alt="Coffee9 assest">
+                <img src="./asset/Coffe9-57.png" alt="Coffee9 assest">
+                <img src="./asset/Coffe9-58.png" alt="Coffee9 assest">
+                <img src="./asset/Coffe9-59.png" alt="Coffee9 assest">
+                <img src="./asset/Coffe9-60.png" alt="Coffee9 assest">
+                <img src="./asset/Coffe9-61.png" alt="Coffee9 assest">
+                <img src="./asset/Coffe9-62.png" alt="Coffee9 assest">
+                <img src="./asset/Coffe9-63.png" alt="Coffee9 assest">
+                <img src="./asset/Coffe9-64.png" alt="Coffee9 assest">
+            </div>
+
+            <button><a href="./index.html" class="lin">Return</a></button>
+        </section>
+    </main>
+
+    <footer>
+        9 Coffee · Marketing Workspace v1.0 · For Internal Use Only · Team Document
+    </footer>
+
+    <script>
+        // Images
+        let assets = document.querySelectorAll(".brand_items>*:not(div)");
+        assets.forEach(asset => {
+            asset.onclick = _ => {
+
+                asset.classList.toggle("active");
+
+                assets.forEach(i => { if (i !== asset) i.classList.remove("active"); });
+
+            }
+        })
+
+        document.addEventListener("click", e => {
+            if (!Array(...assets).includes(e.target)) {
+                assets.forEach(i => i.classList.remove("active"));
+            }
+        })
+    </script>
+</body>
+
+</html>
